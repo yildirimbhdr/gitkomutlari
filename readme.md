@@ -1,24 +1,40 @@
-git init = Git deposu oluşturur
-git add . = Depoya dosyaları ekler
-git commit -m "commit-name" = Dosyaları ekleme sebebimizi söleriz ve commit oluşturur
-git remote add origin url = Clouddaki github deposuyla bağlantı kurmamızı sağlar
-git reset --hard = En son commite dönmeni sağlar
-git branch = Aktif olan branchi gösterir
-git branch branch_ismi = Yeni bir branch oluşturur ve anlık branchdeki kodları kopyalar.
-git push origin --delete branch_ismi = İnternetteki Branchi siler
-git branch -d branch_ismi = Local Branchi siler
-git switch branch_ismi = Localde kullandığın branchi değiştirir
+# Temel Git ve Github komutları
+**git init** = Git deposu oluşturur
+
+**git add .** = Depoya dosyaları ekler
+
+**git commit -m "commit-name"** = Dosyaları ekleme sebebimizi söyleriz ve commit oluşturulur
+
+**git remote add origin 'url'** = Clouddaki github deposuyla bağlantı kurmamızı sağlar. Url yerine depo urli girilir
+
+**git reset --hard** = En son commite dönmeni sağlar
+
+**git branch** = Aktif olan branchi gösterir
+
+**git branch branch_ismi** = Yeni bir branch oluşturur ve anlık branchdeki kodları kopyalar.
+
+**git push origin --delete branch_ismi** = Clouddaki Branchi siler
+
+**git branch -d branch_ismi** = Local Branchi siler
+
+**git switch branch_ismi** = Localde kullandığın branchi değiştirir
 
 
-Klasik bir senaryo
+# Klasik bir senaryo
 
-git init = Proje oluşturulur
-git add . = Projeye dosyalar eklenir
-git commit -m "name" = Commit oluşturulur
-git remote add origin url  = Networke bağlanılır
-git branch main  = Main branchi oluşturulur ve kodlar main branchine kopyalanır
-git switch main = Main branchine geçilir
-git push -u origin main = Netowrke data atılır.
+**git init** = Localde repository oluşturulur
+
+**git add .** = Local repository'e dosyalar eklenir
+
+**git commit -m "name"** = Local commit oluşturulur
+
+**git remote add origin url**  = Local repository clouddaki repository'e bağlanır
+
+**git branch main**  = Main branchi oluşturulur ve kodlar main branchine kopyalanır
+
+**git switch main** = Main branchine geçilir
+
+**git push -u origin main** = Local repositorydeki kodları cloud repository'e  atılır.
 git branch -d master = Local master branchi silinir.
 git push origin --delete master = İnternetteki master branchi silinir.
 
