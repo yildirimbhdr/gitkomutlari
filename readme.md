@@ -69,11 +69,11 @@
 
 	**eval "$(ssh-agent -s)"** = Anlamını bilmiyorum ama yazmamız gerek
 
-	
-Gizli bir repoya projeyi bağlamak için kod aşağıdaki gibidir
--git clone https://milyonadadev: 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@github.com/milyonadadev/milyonadabackend.git
--ghp_ ile başlayan yazı personel access tokendır.
+	**ssh-add ~/.ssh/git_key** = SSH key için dosya oluşturulur
 
+	**cat ~/.ssh/git_key.pub** = SSH keyi kopyalar
+
+	Key oluşturmak için localde yapılan işlemler  bu kadar. Daha sonra bu kodu github hesabımıza ekliyoruz.
 
 
 git pull ile çekerken eğer şu hatayı alırsan
