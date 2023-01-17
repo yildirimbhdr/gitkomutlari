@@ -35,20 +35,36 @@
 **git switch main** = Main branchine geçilir
 
 **git push -u origin main** = Local repositorydeki kodları cloud repository'e  atılır.
-git branch -d master = Local master branchi silinir.
-git push origin --delete master = İnternetteki master branchi silinir.
 
-Değişiklik ekleneceği zaman ise;
-git branch features/reamde_development = Branch oluşturulur ve kdlar oraya alınır.
-git switch features/reamde_development = Branch değiştirilir
-git add . = Kod yazıldıktan sonra branche eklenir.
-git commit -m "name" = Commit girilir.
-git push -u origin features/reamde_development  = Networke atılır ve orada branch oluşur.
-Daha osnra netowrkten pull request oluşturrusun ve main kısmına atarsın
-git switch main = Main branchine gecersin ve orada eski kodlar olur
-git pull = Pull request yaptığın odları main branchine çekerisn.
-Ve son olarak feature branchini silersin.
+**git branch -d branch_isim** = Localdeki branch silinir.
 
+**git push origin --delete branch_isim** = İnternetteki branchi silinir.
+
+## Değişiklik ekleneceği zaman ise;
+-----
+**git branch features/createLoginView** = Branch oluşturulur ve kodlar oraya alınır.
+
+**git switch features/createLoginView** = Branch değiştirilir
+
+**git add .** = Kod yazıldıktan sonra branche eklenir.
+
+**git commit -m "name"** = Yapılan değişiklikler commite girilir.
+
+**git push -u origin features/createLoginView**  = Clouda atılır ve orada branch oluşur.
+
+
+## Daha sonra githubdan pull request yapılır ve değişiklikler main branchine aktarılır
+
+-------------------------------------
+
+**git switch main** = Main branchine gecersin ve orada eski kodlar olur
+
+**git pull** = Clouddaki main branchini yani güncel halini locale çekersin ve merge edersin
+
+# Spesifik durumlar
+- ## Gizli bir repoya bağlanma ve işlem yapma
+	Öncelikle SSH key oluşturulması ve github hesabına bu SSH keyin bağlanması gerekiyor.
+	
 Gizli bir repoya projeyi bağlamak için kod aşağıdaki gibidir
 -git clone https://milyonadadev: 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@github.com/milyonadadev/milyonadabackend.git
 -ghp_ ile başlayan yazı personel access tokendır.
