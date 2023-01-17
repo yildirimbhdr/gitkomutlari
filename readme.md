@@ -64,6 +64,11 @@
 # Spesifik durumlar
 - ## Gizli bir repoya bağlanma ve işlem yapma
 	Öncelikle SSH key oluşturulması ve github hesabına bu SSH keyin bağlanması gerekiyor.
+
+	**ssh-keygen -t ed25519 -C "your_email@example.com"** = Yeni bir ssh key generate eder
+
+	**eval "$(ssh-agent -s)"** = Anlamını bilmiyorum ama yazmamız gerek
+
 	
 Gizli bir repoya projeyi bağlamak için kod aşağıdaki gibidir
 -git clone https://milyonadadev: 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@github.com/milyonadadev/milyonadabackend.git
